@@ -1,4 +1,4 @@
-package codeforces.problem_1a;
+package codeforces;
 
 import java.io.BufferedInputStream;
 import java.util.Scanner;
@@ -7,7 +7,7 @@ import java.util.Scanner;
  * <a href="http://codeforces.com/problemset/problem/1/A">Theatre Square</a>
  * Created by Zeratul on 2018/7/25.
  */
-public class Main {
+public class Problem_1A {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(new BufferedInputStream(System.in));

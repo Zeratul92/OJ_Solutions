@@ -1,4 +1,4 @@
-package codeforces.problem_1009C;
+package codeforces;
 
 import java.io.BufferedInputStream;
 import java.util.Scanner;

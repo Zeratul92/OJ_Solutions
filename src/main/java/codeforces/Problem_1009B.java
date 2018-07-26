@@ -1,4 +1,4 @@
-package codeforces.problem_1009B;
+package codeforces;
 
 import java.io.BufferedInputStream;
 import java.util.Scanner;
@@ -12,7 +12,7 @@ import java.util.Scanner;
  * Step1: get all '0' and '2' with their relative orders unchanged, leave out all '1'(need to count the number of '1')
  * Step2: put all '1' just before the first '2' you got
  */
-public class Main {
+public class Problem_1009B {
     public static void main(String[] args) {
         Scanner in = new Scanner(new BufferedInputStream(System.in));
         while (in.hasNext()) {

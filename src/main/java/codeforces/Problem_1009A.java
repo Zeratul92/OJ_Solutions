@@ -1,4 +1,4 @@
-package codeforces.problem_1009A;
+package codeforces;
 
 import java.io.BufferedInputStream;
 import java.util.Scanner;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * <a href='http://codeforces.com/problemset/problem/1009/A'>Game Shopping</a>
  */
-public class Main {
+public class Problem_1009A {
     public static void main(String[] args) {
         Scanner in = new Scanner(new BufferedInputStream(System.in));
         while (in.hasNext()) {
