@@ -13,6 +13,7 @@ public class Problem {
         Scanner in = new Scanner(new BufferedInputStream(System.in));
         while (in.hasNext()) {
             System.out.println("hello");
+            System.out.println();
         }
     }
 }
