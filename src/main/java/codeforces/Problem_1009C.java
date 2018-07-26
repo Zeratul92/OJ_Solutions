@@ -8,7 +8,7 @@ import java.util.Scanner;
  * Mind the precision issue, better use long type to calculate the sum.
  * Created by Zeratul on 2018/7/26.
  */
-public class Main {
+public class Problem_1009C {
     public static void main(String[] args) {
         Scanner in = new Scanner(new BufferedInputStream(System.in));
         while (in.hasNext()) {
