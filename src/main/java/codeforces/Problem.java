@@ -12,8 +12,10 @@ public class Problem {
     public static void main(String[] args) {
         Scanner in = new Scanner(new BufferedInputStream(System.in));
         while (in.hasNext()) {
-            System.out.println("hello");
-            System.out.println();
+            String line = in.nextLine();
+            int a = in.nextInt();
+            System.out.println(line);
+            System.out.println(String.format("%.7f", 0.0));
         }
     }
 }
