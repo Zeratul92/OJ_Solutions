@@ -3,7 +3,7 @@ package leetcode;
 /**
  * <a href='https://leetcode.com/problems/longest-palindromic-substring/description/'>5. Longest Palindromic Substring</a>
  */
-public class Algorithm_5 {
+public class Algorithm_5_LongestPalindromicSubstring {
 
     public static String getHelpString(String s, char $) {
         StringBuilder sb = new StringBuilder();
@@ -80,7 +80,7 @@ public class Algorithm_5 {
     }
 
     public static void main(String[] args) {
-        Algorithm_5 al = new Algorithm_5();
+        Algorithm_5_LongestPalindromicSubstring al = new Algorithm_5_LongestPalindromicSubstring();
         System.out.println(al.longestPalindrome("hehe"));
     }
 }

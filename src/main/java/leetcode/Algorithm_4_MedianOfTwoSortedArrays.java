@@ -1,12 +1,9 @@
 package leetcode;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * <a href='https://leetcode.com/problems/longest-substring-without-repeating-characters/description/'>Longest Substring Without Repeating Characters</a>
  */
-public class Algorithm_4 {
+public class Algorithm_4_MedianOfTwoSortedArrays {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         // always make a.length <= b.length
         int[] a, b;
@@ -116,7 +113,7 @@ public class Algorithm_4 {
     }
 
     public static void main(String[] args) {
-        Algorithm_4 a3 = new Algorithm_4();
+        Algorithm_4_MedianOfTwoSortedArrays a3 = new Algorithm_4_MedianOfTwoSortedArrays();
         System.out.println(a3.findMedianSortedArrays(
                 new int[]{1, 2},
                 new int[]{-1, 3}));

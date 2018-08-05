@@ -3,7 +3,7 @@ package leetcode;
 /**
  * <a href='https://leetcode.com/problems/add-two-numbers/description/'>Add Two Numbers</>
  */
-public class Algorithm_2 {
+public class Algorithm_2_AddTwoNumbers {
     public class ListNode {
         int val;
         ListNode next;
