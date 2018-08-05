@@ -4,7 +4,7 @@ package leetcode;
  * <a href='https://leetcode.com/problems/nth-magical-number/description/'>Nth Magical Number</a>
  * Number theory, using Euclidean Algorithm to get greatest common divisor
  */
-public class Algorithm_878 {
+public class Algorithm_878_Nth_Magical_Number {
     public static int gcd(int a, int b) {
         if (b == 0) {
             return a;
@@ -45,7 +45,7 @@ public class Algorithm_878 {
     }
 
     public static void main(String[] args) {
-        Algorithm_878 solution = new Algorithm_878();
+        Algorithm_878_Nth_Magical_Number solution = new Algorithm_878_Nth_Magical_Number();
         System.out.println(solution.nthMagicalNumber(9, 6, 5));
         System.out.println(solution.nthMagicalNumber(10, 6, 5));
         System.out.println(solution.nthMagicalNumber(11, 6, 5));

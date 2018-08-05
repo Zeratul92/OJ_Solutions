@@ -3,7 +3,7 @@ package leetcode;
 /**
  * <a href='https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/description/'>Length of Longest Fibonacci Subsequence</a><br>
  */
-public class Algorithm_873 {
+public class Algorithm_873_Length_of_Longest_Fibonacci_Subsequence {
 
 
     public int lenLongestFibSubseq(int[] A) {
@@ -40,7 +40,7 @@ public class Algorithm_873 {
                 dp[j][left] = Math.max(dp[j][left], dp[i][j] + 1);
                 ans = Math.max(ans, dp[j][left]);
 //                if (dp[j][left] > 3) {
-//                    System.out.println(Algorithm_876[i] + " " + Algorithm_876[j] + " " + Algorithm_876[left] + ": " + dp[j][left]);
+//                    System.out.println(Algorithm_876_Middle_of_the_Linked_List[i] + " " + Algorithm_876_Middle_of_the_Linked_List[j] + " " + Algorithm_876_Middle_of_the_Linked_List[left] + ": " + dp[j][left]);
 //                }
             }
         }
@@ -49,7 +49,7 @@ public class Algorithm_873 {
     }
 
     public static void main(String[] args) {
-        Algorithm_873 al = new Algorithm_873();
+        Algorithm_873_Length_of_Longest_Fibonacci_Subsequence al = new Algorithm_873_Length_of_Longest_Fibonacci_Subsequence();
         System.out.println(al.lenLongestFibSubseq(new int[]{1, 2, 3, 4, 5, 6, 7, 8}));
         System.out.println();
         System.out.println(al.lenLongestFibSubseq(new int[]{1, 3, 7, 11, 12, 14, 18}));

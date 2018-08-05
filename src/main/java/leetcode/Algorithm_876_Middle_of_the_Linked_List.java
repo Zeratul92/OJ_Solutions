@@ -3,7 +3,7 @@ package leetcode;
 /**
  * <a href='https://leetcode.com/problems/middle-of-the-linked-list/description/'>Middle of the Linked List</a>
  */
-public class Algorithm_876 {
+public class Algorithm_876_Middle_of_the_Linked_List {
     public static class ListNode {
         int val;
         ListNode next;
@@ -28,7 +28,7 @@ public class Algorithm_876 {
     }
 
     public static void main(String[] args) {
-        Algorithm_876 solution = new Algorithm_876();
+        Algorithm_876_Middle_of_the_Linked_List solution = new Algorithm_876_Middle_of_the_Linked_List();
         ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(2);
         ListNode node3 = new ListNode(3);

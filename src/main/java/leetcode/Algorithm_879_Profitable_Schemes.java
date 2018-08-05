@@ -4,7 +4,7 @@ package leetcode;
  * <a href='https://leetcode.com/problems/profitable-schemes/description/'>Profitable Schemes</a>
  * Classic Knapsack DP issue
  */
-public class Algorithm_879 {
+public class Algorithm_879_Profitable_Schemes {
     public int profitableSchemes(int G, int P, int[] group, int[] profit) {
         int size = group.length; // size of events
         long MOD = 1000000007L;
@@ -41,7 +41,7 @@ public class Algorithm_879 {
     }
 
     public static void main(String[] args) {
-        Algorithm_879 solution = new Algorithm_879();
+        Algorithm_879_Profitable_Schemes solution = new Algorithm_879_Profitable_Schemes();
         System.out.println(solution.profitableSchemes(10, 5,
                 new int[]{2, 3, 5},
                 new int[]{6, 7, 8}));
