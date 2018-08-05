@@ -1,7 +1,7 @@
 package leetcode;
 
 /**
- * <a href='https://leetcode.com/problems/two-sum/description/'>Two Sum</a>
+ * <a href='https://leetcode.com/problems/string-to-integer-atoi/description/'>8. String to Integer (atoi)</a>
  */
 public class Algorithm_8_String_to_Integer {
     public static boolean isDigit(char c) {
