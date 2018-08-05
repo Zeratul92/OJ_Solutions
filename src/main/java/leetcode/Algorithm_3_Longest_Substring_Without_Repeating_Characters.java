@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * <a href='https://leetcode.com/problems/longest-substring-without-repeating-characters/description/'>Longest Substring Without Repeating Characters</a>
  */
-public class Algorithm_3_LongestSubstringWithoutRepeatingCharacters {
+public class Algorithm_3_Longest_Substring_Without_Repeating_Characters {
     public int lengthOfLongestSubstring(String s) {
         if (s == null || s.length() == 0) {
             return 0;
@@ -35,7 +35,7 @@ public class Algorithm_3_LongestSubstringWithoutRepeatingCharacters {
     }
 
     public static void main(String[] args) {
-        Algorithm_3_LongestSubstringWithoutRepeatingCharacters a3 = new Algorithm_3_LongestSubstringWithoutRepeatingCharacters();
+        Algorithm_3_Longest_Substring_Without_Repeating_Characters a3 = new Algorithm_3_Longest_Substring_Without_Repeating_Characters();
         System.out.println(a3.lengthOfLongestSubstring("abcdefdaefgheghjkijkfhkikwolsiwabsjfnsbdjs"));
     }
 }
