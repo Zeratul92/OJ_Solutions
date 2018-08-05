@@ -7,7 +7,6 @@ import java.util.Scanner;
 /**
  * <a href='http://codeforces.com/problemset/problem/1012/C'>http://codeforces.com/problemset/problem/1012/C
  * dp
- * O(n ^ 2) TLE, don't know why
  */
 public class Problem_1012C_Hills {
 
