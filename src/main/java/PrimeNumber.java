@@ -8,10 +8,10 @@ public class PrimeNumber {
 
     /**
      * get prime number table from 1 to n
-     * @param n
-     * @return
+     * @param n boundary [1, n]
+     * @return An array consists of the prime numbers from 1 to n
      */
-    public static int[] getPrimeNumbers(int n) {
+    private static int[] getPrimeNumbers(int n) {
         boolean[] isPrime = new boolean[n + 1];
         for (int i = 2; i < n + 1; i++) {
             isPrime[i] = true;
@@ -45,14 +45,14 @@ public class PrimeNumber {
      * @param b int
      * @return gcd
      */
-    public static int gcd(int a, int b) {
+    private static int gcd(int a, int b) {
         if (b == 0) {
             return a;
         }
         return gcd(b, a % b);
     }
 
-    public static int euler(int n) {
+    private static int euler(int n) {
         int ans = 1;
         for (int i = 2; i * i <= n; i++)
             if (n % i == 0) {
@@ -71,7 +71,7 @@ public class PrimeNumber {
     /**
      * test Euler function
      */
-    public static void test1() {
+    private static void test1() {
         int sum = 0;
         for (int i = 2; i < 1000; i++) {
             sum += euler(i);
@@ -84,7 +84,7 @@ public class PrimeNumber {
     /**
      * test prime number table
      */
-    public static void test2(int n) {
+    private static void test2(int n) {
         System.out.println();
         System.out.println("Prime numbers under " + n);
         Date beginTime = new Date();
