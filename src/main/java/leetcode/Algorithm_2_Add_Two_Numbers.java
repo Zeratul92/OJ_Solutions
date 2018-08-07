@@ -4,7 +4,7 @@ package leetcode;
  * <a href='https://leetcode.com/problems/add-two-numbers/description/'>Add Two Numbers</>
  */
 public class Algorithm_2_Add_Two_Numbers {
-    public class ListNode {
+    private class ListNode {
         int val;
         ListNode next;
 

@@ -4,7 +4,7 @@ package leetcode;
  * <a href='https://leetcode.com/problems/middle-of-the-linked-list/description/'>Middle of the Linked List</a>
  */
 public class Algorithm_876_Middle_of_the_Linked_List {
-    public static class ListNode {
+    private static class ListNode {
         int val;
         ListNode next;
         ListNode(int x) {
