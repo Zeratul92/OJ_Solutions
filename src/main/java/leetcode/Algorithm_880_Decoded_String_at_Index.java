@@ -6,7 +6,7 @@ import java.util.LinkedList;
 /**
  * Created by Zeratul on 2018/8/5.
  */
-public class Algorithm_884_Decoded_String_at_Index {
+public class Algorithm_880_Decoded_String_at_Index {
     public String decodeAtIndex(String S, int K) {
         int a = -1;
         int b = 0;
@@ -82,7 +82,7 @@ public class Algorithm_884_Decoded_String_at_Index {
     }
 
     public static void main(String[] args) {
-        Algorithm_884_Decoded_String_at_Index d = new Algorithm_884_Decoded_String_at_Index();
+        Algorithm_880_Decoded_String_at_Index d = new Algorithm_880_Decoded_String_at_Index();
 
         System.out.println(d.decodeAtIndex("a2b3c4d5e6f7g8h9", 9));
         System.out.println(d.decodeAtIndex("leet2code3skr4", 100));
