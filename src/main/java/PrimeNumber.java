@@ -101,8 +101,41 @@ public class PrimeNumber {
 //        System.out.println(sb);
     }
 
+
+    private static boolean isPalindrome(char[] chars) {
+        for (int i = 0; i < chars.length / 2; i++) {
+            if (chars[i] != chars[chars.length - 1 - i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private static void palindromePrime(int n) {
+        int[] primes = getPrimeNumbers(n);
+        List<Integer> ret = new ArrayList<>();
+        for (int prime : primes) {
+            char[] chars = (prime + "").toCharArray();
+            if (isPalindrome(chars)) {
+                ret.add(prime);
+            }
+        }
+        System.out.println(ret.size());
+        System.out.println(ret);
+    }
+
     public static void main(String[] args) {
-        test2(40020);
+        Date last = new Date();
+        Date cur;
+
+        for (int i = 15; i > 2; i--) {
+
+            palindromePrime(Integer.MAX_VALUE >> i);
+            cur = new Date();
+            System.out.println((Integer.MAX_VALUE >> i) + ": " + (cur.getTime() - last.getTime()) + "ms");
+            last = cur;
+        }
+
     }
 
 }
