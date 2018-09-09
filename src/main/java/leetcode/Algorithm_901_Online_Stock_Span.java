@@ -4,12 +4,9 @@ import java.util.Stack;
 
 class StockSpanner {
     Stack<int[]> stack;
-    int ans;
     public StockSpanner() {
         stack = new Stack<>();
-        ans = Integer.MAX_VALUE;
     }
-
     public int next(int price) {
         int ret = 1;
         while (!stack.isEmpty() && stack.peek()[0] <= price) {
