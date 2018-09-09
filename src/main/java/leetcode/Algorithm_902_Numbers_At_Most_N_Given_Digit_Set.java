@@ -5,7 +5,8 @@ public class Algorithm_902_Numbers_At_Most_N_Given_Digit_Set {
     public int atMostNGivenDigitSet(String[] D, int N) {
         String num = N + "";
         int len = num.length();
-        int ret = 0, cnt = 1;
+        int ret = 0; // result
+        int cnt = 1; // count helper
         int[] count = new int[len];
         count[len - 1] = 1;
         for (int i = 0; i < len - 1; i++) {
@@ -13,7 +14,10 @@ public class Algorithm_902_Numbers_At_Most_N_Given_Digit_Set {
             count[len - i - 2] = cnt;
             ret += cnt;
         }
+        // if len == 4
+        // count would be 64, 16, 4, 1
 
+        // digitCnt[i] means how many digits in D that is smaller or equal to i
         int[] digitCnt = new int[11];
         boolean[] hasDigit = new boolean[10];
         for (String s : D) {
@@ -33,10 +37,6 @@ public class Algorithm_902_Numbers_At_Most_N_Given_Digit_Set {
 //        System.out.println(sb1);
 //        System.out.println(sb2);
 
-
-
-        int cnt1 = 1, cnt2 = 1;
-        boolean canReach = true;
         for (int i = 0; i < len; i++) {
             int digit = num.charAt(i) - '0';
             if (hasDigit[digit]) {
