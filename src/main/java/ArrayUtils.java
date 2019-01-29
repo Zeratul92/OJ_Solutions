@@ -1,4 +1,4 @@
-public class Array {
+public class ArrayUtils {
 
     private static int getReversePairCnt(int[] a) {
         if (a == null || a.length == 0) {
