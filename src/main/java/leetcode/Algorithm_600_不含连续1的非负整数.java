@@ -5,8 +5,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/*
-
+/**
+ * not finished
  */
 public class Algorithm_600_不含连续1的非负整数 {
 
