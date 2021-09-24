@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * not finished
+ *
  */
 public class Algorithm_637_二叉树的层平均值 {
 
