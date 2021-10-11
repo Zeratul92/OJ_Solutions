@@ -8,7 +8,39 @@ import java.util.Random;
 
  */
 public class Algorithm_528_按权重随机选择 {
+    private static class Solution {
+        private int[] sumIdx;
+        private int weightSum = 0;
 
+        public Solution(int[] w) {
+            sumIdx = new int[w.length];
+            weightSum = 0;
+            for (int i = 0; i < w.length; i++) {
+                weightSum += w[i];
+                sumIdx[i] = weightSum;
+            }
+        }
+
+        public int pickIndex() {
+            int left = 0;
+            int right = sumIdx.length - 1;
+            int mid;
+            int rand = new Random().nextInt(weightSum) + 1;
+
+            while (left < right) {
+                mid = (left + right) >> 1;
+                if (sumIdx[mid] == rand) {
+                    return mid;
+                } else if (sumIdx[mid] < rand) {
+                    left = mid + 1;
+                } else {
+                    right = mid;
+                }
+            }
+            mid = (left + right) >> 1;
+            return mid;
+        }
+    }
 
     public static void main(String[] args) {
 
@@ -29,36 +61,3 @@ public class Algorithm_528_按权重随机选择 {
 }
 
 
-class Solution {
-    private int[] sumIdx;
-    private int weightSum = 0;
-
-    public Solution(int[] w) {
-        sumIdx = new int[w.length];
-        weightSum = 0;
-        for (int i = 0; i < w.length; i++) {
-            weightSum += w[i];
-            sumIdx[i] = weightSum;
-        }
-    }
-
-    public int pickIndex() {
-        int left = 0;
-        int right = sumIdx.length - 1;
-        int mid;
-        int rand = new Random().nextInt(weightSum) + 1;
-
-        while (left < right) {
-            mid = (left + right) >> 1;
-            if (sumIdx[mid] == rand) {
-                return mid;
-            } else if (sumIdx[mid] < rand) {
-                left = mid + 1;
-            } else {
-                right = mid;
-            }
-        }
-        mid = (left + right) >> 1;
-        return mid;
-    }
-}
